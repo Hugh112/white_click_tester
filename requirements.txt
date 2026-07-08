@@ -1,0 +1,5 @@
+playwright
+requests
+pyinstaller
+openpyxl
+xlrd>=2.0.1

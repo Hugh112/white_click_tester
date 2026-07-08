@@ -1,0 +1,201 @@
+[BUILD START] 2026/07/08 周三 16:59:39.98 
+Python 3.12.10
+Requirement already satisfied: pip in C:\Users\1\AppData\Local\Programs\Python\Python312\Lib\site-packages (26.1.2)
+Requirement already satisfied: playwright in C:\Users\1\AppData\Local\Programs\Python\Python312\Lib\site-packages (from -r requirements.txt (line 1)) (1.60.0)
+Requirement already satisfied: requests in C:\Users\1\AppData\Local\Programs\Python\Python312\Lib\site-packages (from -r requirements.txt (line 2)) (2.34.2)
+Requirement already satisfied: pyinstaller in C:\Users\1\AppData\Local\Programs\Python\Python312\Lib\site-packages (from -r requirements.txt (line 3)) (6.21.0)
+Requirement already satisfied: openpyxl in C:\Users\1\AppData\Local\Programs\Python\Python312\Lib\site-packages (from -r requirements.txt (line 4)) (3.1.5)
+Requirement already satisfied: xlrd>=2.0.1 in C:\Users\1\AppData\Local\Programs\Python\Python312\Lib\site-packages (from -r requirements.txt (line 5)) (2.0.2)
+Requirement already satisfied: pyee<14,>=13 in C:\Users\1\AppData\Local\Programs\Python\Python312\Lib\site-packages (from playwright->-r requirements.txt (line 1)) (13.0.1)
+Requirement already satisfied: greenlet<4.0.0,>=3.1.1 in C:\Users\1\AppData\Local\Programs\Python\Python312\Lib\site-packages (from playwright->-r requirements.txt (line 1)) (3.5.2)
+Requirement already satisfied: typing-extensions in C:\Users\1\AppData\Local\Programs\Python\Python312\Lib\site-packages (from pyee<14,>=13->playwright->-r requirements.txt (line 1)) (4.15.0)
+Requirement already satisfied: charset_normalizer<4,>=2 in C:\Users\1\AppData\Local\Programs\Python\Python312\Lib\site-packages (from requests->-r requirements.txt (line 2)) (3.4.7)
+Requirement already satisfied: idna<4,>=2.5 in C:\Users\1\AppData\Local\Programs\Python\Python312\Lib\site-packages (from requests->-r requirements.txt (line 2)) (3.18)
+Requirement already satisfied: urllib3<3,>=1.26 in C:\Users\1\AppData\Local\Programs\Python\Python312\Lib\site-packages (from requests->-r requirements.txt (line 2)) (2.7.0)
+Requirement already satisfied: certifi>=2023.5.7 in C:\Users\1\AppData\Local\Programs\Python\Python312\Lib\site-packages (from requests->-r requirements.txt (line 2)) (2026.6.17)
+Requirement already satisfied: altgraph in C:\Users\1\AppData\Local\Programs\Python\Python312\Lib\site-packages (from pyinstaller->-r requirements.txt (line 3)) (0.17.5)
+Requirement already satisfied: packaging>=22.0 in C:\Users\1\AppData\Local\Programs\Python\Python312\Lib\site-packages (from pyinstaller->-r requirements.txt (line 3)) (26.2)
+Requirement already satisfied: pefile>=2022.5.30 in C:\Users\1\AppData\Local\Programs\Python\Python312\Lib\site-packages (from pyinstaller->-r requirements.txt (line 3)) (2024.8.26)
+Requirement already satisfied: pyinstaller-hooks-contrib>=2026.6 in C:\Users\1\AppData\Local\Programs\Python\Python312\Lib\site-packages (from pyinstaller->-r requirements.txt (line 3)) (2026.6)
+Requirement already satisfied: pywin32-ctypes>=0.2.1 in C:\Users\1\AppData\Local\Programs\Python\Python312\Lib\site-packages (from pyinstaller->-r requirements.txt (line 3)) (0.2.3)
+Requirement already satisfied: setuptools>=42.0.0 in C:\Users\1\AppData\Local\Programs\Python\Python312\Lib\site-packages (from pyinstaller->-r requirements.txt (line 3)) (82.0.1)
+Requirement already satisfied: et-xmlfile in C:\Users\1\AppData\Local\Programs\Python\Python312\Lib\site-packages (from openpyxl->-r requirements.txt (line 4)) (2.0.0)
+Requirement already satisfied: pyinstaller in C:\Users\1\AppData\Local\Programs\Python\Python312\Lib\site-packages (6.21.0)
+Requirement already satisfied: altgraph in C:\Users\1\AppData\Local\Programs\Python\Python312\Lib\site-packages (from pyinstaller) (0.17.5)
+Requirement already satisfied: packaging>=22.0 in C:\Users\1\AppData\Local\Programs\Python\Python312\Lib\site-packages (from pyinstaller) (26.2)
+Requirement already satisfied: pefile>=2022.5.30 in C:\Users\1\AppData\Local\Programs\Python\Python312\Lib\site-packages (from pyinstaller) (2024.8.26)
+Requirement already satisfied: pyinstaller-hooks-contrib>=2026.6 in C:\Users\1\AppData\Local\Programs\Python\Python312\Lib\site-packages (from pyinstaller) (2026.6)
+Requirement already satisfied: pywin32-ctypes>=0.2.1 in C:\Users\1\AppData\Local\Programs\Python\Python312\Lib\site-packages (from pyinstaller) (0.2.3)
+Requirement already satisfied: setuptools>=42.0.0 in C:\Users\1\AppData\Local\Programs\Python\Python312\Lib\site-packages (from pyinstaller) (82.0.1)
+159 INFO: PyInstaller: 6.21.0, contrib hooks: 2026.6
+159 INFO: Python: 3.12.10
+181 INFO: Platform: Windows-11-10.0.26200-SP0
+181 INFO: Python environment: C:\Users\1\AppData\Local\Programs\Python\Python312
+182 INFO: wrote D:\test\点击\WhitelistClick_v1.0_encoding_fix\WhitelistClick.spec
+186 INFO: Removing temporary files and cleaning cache in C:\Users\1\AppData\Local\pyinstaller
+2350 INFO: Module search paths (PYTHONPATH):
+['D:\\test\\点击\\WhitelistClick_v1.0_encoding_fix',
+ 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\python312.zip',
+ 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\DLLs',
+ 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib',
+ 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312',
+ 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages',
+ 'D:\\test\\点击\\WhitelistClick_v1.0_encoding_fix']
+2766 INFO: Appending 'datas' from .spec
+2775 INFO: checking Analysis
+2775 INFO: Building Analysis because Analysis-00.toc is non existent
+2775 INFO: Looking for Python shared library...
+2775 INFO: Using Python shared library: C:\Users\1\AppData\Local\Programs\Python\Python312\python312.dll
+2775 INFO: Running Analysis Analysis-00.toc
+2775 INFO: Target bytecode optimization level: 0
+2775 INFO: Initializing module dependency graph...
+2776 INFO: Initializing module graph hook caches...
+2802 INFO: Analyzing modules for base_library.zip ...
+3707 INFO: Processing standard module hook 'hook-heapq.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+3776 INFO: Processing standard module hook 'hook-encodings.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+4969 INFO: Processing standard module hook 'hook-math.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+5145 INFO: Processing standard module hook 'hook-pickle.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+6130 INFO: Caching module dependency graph...
+6158 INFO: Analyzing D:\test\点击\WhitelistClick_v1.0_encoding_fix\app.py
+6434 INFO: Processing standard module hook 'hook-webbrowser.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+6446 INFO: Processing pre-find-module-path hook 'hook-tkinter.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\pre_find_module_path'
+6449 INFO: TclTkInfo: initializing cached Tcl/Tk info...
+6702 INFO: Processing standard module hook 'hook-_tkinter.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+D:\test\点击\WhitelistClick_v1.0_encoding_fix\engine.py:1517: SyntaxWarning: invalid escape sequence '\s'
+  const ns = (s) => (s || '').toString().replace(/\s+/g,'');
+D:\test\点击\WhitelistClick_v1.0_encoding_fix\engine.py:1549: SyntaxWarning: invalid escape sequence '\s'
+  const ns = (s) => (s || '').toString().replace(/\s+/g,'');
+D:\test\点击\WhitelistClick_v1.0_encoding_fix\engine.py:1891: SyntaxWarning: invalid escape sequence '\d'
+  /\d+(\.\d+)?\s*(km|公里|米|m)\b/i,
+D:\test\点击\WhitelistClick_v1.0_encoding_fix\engine.py:1946: SyntaxWarning: invalid escape sequence '\s'
+  .replace(/[\s\u200b\u200c\u200d\ufeff,.;:!?，。！？、；：'"‘’“”（）【】《》<>\[\]{}\-—…·￥]/g, '');
+D:\test\点击\WhitelistClick_v1.0_encoding_fix\engine.py:1991: SyntaxWarning: invalid escape sequence '\s'
+  .replace(/[\s\u3000\u200b\u200c\u200d\ufeff,.;:!?，。！？、；：'"‘’“”（）【】《》<>\[\]{}\-—…·￥]/g, '');
+D:\test\点击\WhitelistClick_v1.0_encoding_fix\engine.py:2071: SyntaxWarning: invalid escape sequence '\s'
+  .replace(/[\s\u3000\u200b\u200c\u200d\ufeff,.;:!?，。！？、；：'"‘’“”（）【】《》<>\[\]{}\-—…·￥]/g, '');
+D:\test\点击\WhitelistClick_v1.0_encoding_fix\engine.py:2268: SyntaxWarning: invalid escape sequence '\s'
+  .replace(/[\s\u200b\u200c\u200d\ufeff,.;:!?，。！？、；：'"‘’“”（）【】《》<>\[\]{}\-—…·￥]/g, '');
+D:\test\点击\WhitelistClick_v1.0_encoding_fix\engine.py:2572: SyntaxWarning: invalid escape sequence '\s'
+  .replace(/[\s\u3000\-—_.,，。:：;；|/\\()（）\[\]【】<>《》·'"“”‘’]+/g, '');
+D:\test\点击\WhitelistClick_v1.0_encoding_fix\engine.py:2712: SyntaxWarning: invalid escape sequence '\s'
+  .replace(/[\s\u3000\-—_.,，。:：;；|/\\()（）\[\]【】<>《》·'"“”‘’]+/g, '');
+D:\test\点击\WhitelistClick_v1.0_encoding_fix\engine.py:2883: SyntaxWarning: invalid escape sequence '\s'
+  const clean = line.replace(/\s+/g, ' ').trim();
+D:\test\点击\WhitelistClick_v1.0_encoding_fix\engine.py:2939: SyntaxWarning: invalid escape sequence '\s'
+  const norm = (s) => String(s || '').normalize('NFKC').replace(/[\s\u3000]+/g, '').toLowerCase();
+D:\test\点击\WhitelistClick_v1.0_encoding_fix\engine.py:3023: SyntaxWarning: invalid escape sequence '\s'
+  .replace(/[\s\u3000\-—_.,，。:：;；|/\\()（）\[\]【】<>《》·'"“”‘’]+/g, '');
+D:\test\点击\WhitelistClick_v1.0_encoding_fix\engine.py:3376: SyntaxWarning: invalid escape sequence '\s'
+  .replace(/[\s\u3000\u200b\u200c\u200d\ufeff,.;:!?，。！？、；：'"‘’“”（）【】《》<>\[\]{}\-—…·￥]/g, '');
+6894 INFO: Processing standard module hook 'hook-difflib.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+6953 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+7015 INFO: Processing standard module hook 'hook-xml.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+7193 INFO: Processing standard module hook 'hook-_ctypes.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+7227 INFO: Processing standard module hook 'hook-playwright.sync_api.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\playwright\\_impl\\__pyinstaller'
+7928 INFO: Processing standard module hook 'hook-platform.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+8181 INFO: Processing standard module hook 'hook-urllib3.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+8255 INFO: Processing pre-safe-import-module hook 'hook-backports.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+8258 INFO: SetuptoolsInfo: initializing cached setuptools info...
+8831 INFO: Setuptools: 'backports' appears to be a full setuptools-vendored copy - creating alias to 'setuptools._vendor.backports'!
+8836 INFO: Processing standard module hook 'hook-setuptools.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+8847 INFO: Processing pre-safe-import-module hook 'hook-distutils.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+8890 INFO: Processing standard module hook 'hook-sysconfig.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+8897 INFO: Processing pre-safe-import-module hook 'hook-jaraco.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+8898 INFO: Setuptools: 'jaraco' appears to be a full setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco'!
+8906 INFO: Processing pre-safe-import-module hook 'hook-more_itertools.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+8907 INFO: Setuptools: 'more_itertools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.more_itertools'!
+9005 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+9201 INFO: Processing pre-safe-import-module hook 'hook-packaging.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+9363 INFO: Processing standard module hook 'hook-setuptools._vendor.jaraco.text.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+9365 INFO: Processing pre-safe-import-module hook 'hook-importlib_resources.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+9526 INFO: Processing pre-safe-import-module hook 'hook-importlib_metadata.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+9527 INFO: Setuptools: 'importlib_metadata' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.importlib_metadata'!
+9551 INFO: Processing standard module hook 'hook-setuptools._vendor.importlib_metadata.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+9573 INFO: Processing pre-safe-import-module hook 'hook-zipp.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+9574 INFO: Setuptools: 'zipp' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.zipp'!
+9775 INFO: Processing pre-safe-import-module hook 'hook-tomli.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+9776 INFO: Setuptools: 'tomli' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.tomli'!
+10175 INFO: Processing pre-safe-import-module hook 'hook-wheel.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+10176 INFO: Setuptools: 'wheel' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.wheel'!
+10543 INFO: Processing standard module hook 'hook-certifi.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+10578 INFO: Processing standard module hook 'hook-charset_normalizer.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+10703 INFO: Processing standard module hook 'hook-openpyxl.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+10779 INFO: Processing standard module hook 'hook-numpy.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+13074 INFO: Processing standard module hook 'hook-xml.etree.cElementTree.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+14085 INFO: Analyzing hidden import 'playwright.__main__'
+14087 INFO: Analyzing hidden import 'playwright._impl.__pyinstaller'
+14088 INFO: Analyzing hidden import 'playwright._impl._async_base'
+14092 INFO: Analyzing hidden import 'playwright._impl._path_utils'
+14093 INFO: Analyzing hidden import 'playwright.async_api'
+14098 INFO: Processing standard module hook 'hook-playwright.async_api.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\playwright\\_impl\\__pyinstaller'
+14444 INFO: Analyzing hidden import 'openpyxl.compat.abc'
+14446 INFO: Analyzing hidden import 'openpyxl.compat.product'
+14447 INFO: Analyzing hidden import 'openpyxl.compat.singleton'
+14450 INFO: Analyzing hidden import 'openpyxl.descriptors.slots'
+14451 INFO: Analyzing hidden import 'openpyxl.packaging.interface'
+14453 INFO: Analyzing hidden import 'openpyxl.utils.dataframe'
+14459 INFO: Processing standard module hook 'hook-pandas.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+16377 INFO: Processing standard module hook 'hook-zoneinfo.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+17454 INFO: Processing standard module hook 'hook-pandas.io.formats.style.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+19483 INFO: Processing standard module hook 'hook-pandas.plotting.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+20071 INFO: Processing standard module hook 'hook-dateutil.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+20187 INFO: Processing pre-safe-import-module hook 'hook-six.moves.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+21207 INFO: Processing standard module hook 'hook-sqlite3.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+21613 INFO: Processing standard module hook 'hook-pandas.io.clipboard.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+21723 INFO: Processing standard module hook 'hook-xml.dom.domreg.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+22068 INFO: Analyzing hidden import 'openpyxl.utils.inference'
+22069 INFO: Analyzing hidden import 'openpyxl.worksheet.cell_watch'
+22071 INFO: Analyzing hidden import 'openpyxl.worksheet.controls'
+22109 INFO: Analyzing hidden import 'openpyxl.worksheet.custom'
+22111 INFO: Analyzing hidden import 'openpyxl.worksheet.errors'
+22116 INFO: Analyzing hidden import 'openpyxl.worksheet.picture'
+22117 INFO: Analyzing hidden import 'openpyxl.worksheet.smart_tag'
+22119 INFO: Processing module hooks (post-graph stage)...
+22133 WARNING: Hidden import "jinja2" not found!
+22295 INFO: Processing standard module hook 'hook-_tkinter.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+22296 INFO: Processing standard module hook 'hook-tzdata.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+22794 INFO: Performing binary vs. data reclassification (1941 entries)
+23226 INFO: Looking for ctypes DLLs
+23256 INFO: Analyzing run-time hooks ...
+23261 INFO: Including run-time hook 'pyi_rth_inspect.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+23263 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+23265 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+23267 INFO: Including run-time hook 'pyi_rth_setuptools.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+23267 INFO: Including run-time hook 'pyi_rth__tkinter.py' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+23321 INFO: Creating base_library.zip...
+23335 INFO: Looking for dynamic libraries
+24439 INFO: Extra DLL search directories (AddDllDirectory): ['C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\numpy.libs', 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pandas.libs']
+24439 INFO: Extra DLL search directories (PATH): []
+25575 INFO: Warnings written to D:\test\点击\WhitelistClick_v1.0_encoding_fix\build\WhitelistClick\warn-WhitelistClick.txt
+25684 INFO: Graph cross-reference written to D:\test\点击\WhitelistClick_v1.0_encoding_fix\build\WhitelistClick\xref-WhitelistClick.html
+25754 INFO: checking PYZ
+25754 INFO: Building PYZ because PYZ-00.toc is non existent
+25754 INFO: Building PYZ (ZlibArchive) D:\test\点击\WhitelistClick_v1.0_encoding_fix\build\WhitelistClick\PYZ-00.pyz
+26961 INFO: Building PYZ (ZlibArchive) D:\test\点击\WhitelistClick_v1.0_encoding_fix\build\WhitelistClick\PYZ-00.pyz completed successfully.
+26985 INFO: checking PKG
+26985 INFO: Building PKG because PKG-00.toc is non existent
+26985 INFO: Building PKG (CArchive) WhitelistClick.pkg
+27038 INFO: Building PKG (CArchive) WhitelistClick.pkg completed successfully.
+27039 INFO: Bootloader C:\Users\1\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyInstaller\bootloader\Windows-64bit-intel\runw.exe
+27039 INFO: checking EXE
+27039 INFO: Building EXE because EXE-00.toc is non existent
+27039 INFO: Building EXE from EXE-00.toc
+27039 INFO: Copying bootloader EXE to D:\test\点击\WhitelistClick_v1.0_encoding_fix\build\WhitelistClick\WhitelistClick.exe
+27131 INFO: Copying icon to EXE
+27181 INFO: Copying 0 resources to EXE
+27181 INFO: Embedding manifest in EXE
+27233 INFO: Appending PKG archive to EXE
+27329 INFO: Fixing EXE headers
+27653 INFO: Building EXE from EXE-00.toc completed successfully.
+27671 INFO: checking COLLECT
+27671 INFO: Building COLLECT because COLLECT-00.toc is non existent
+27672 INFO: Building COLLECT COLLECT-00.toc
+30257 INFO: Building COLLECT COLLECT-00.toc completed successfully.
+30300 INFO: Build complete! The results are available in: D:\test\点击\WhitelistClick_v1.0_encoding_fix\dist
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。

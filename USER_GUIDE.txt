@@ -1,0 +1,18 @@
+﻿白名单点击 v1.0 使用说明
+
+一、首次使用
+1. 双击 check_env.bat 检查环境。
+2. 双击 build_portable.bat 生成 dist\WhitelistClick。
+3. 打开 dist\WhitelistClick\WhitelistClick.exe。
+
+二、发送给别人使用
+只发送整个 dist\WhitelistClick 文件夹，不要只发送单个 exe。
+
+三、常用文件
+keywords.csv：关键词表。
+whitelist.csv：白名单表。
+blacklist.csv：黑名单表。
+proxies.txt：代理列表。
+
+四、更新
+把 github/update.json 放到你的 GitHub 仓库，并在 update_config.json 中填写 raw 链接。

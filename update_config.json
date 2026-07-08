@@ -1,0 +1,5 @@
+﻿{
+  "update_json_url": "https://raw.githubusercontent.com/YOUR_NAME/YOUR_REPO/main/update.json",
+  "current_version": "1.0.0",
+  "app_name": "白名单点击"
+}
