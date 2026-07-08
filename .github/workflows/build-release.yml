@@ -1,0 +1,62 @@
+name: Build WhitelistClick Release
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        shell: cmd
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pyinstaller openpyxl xlrd requests playwright
+          python -m playwright install chromium
+
+      - name: Build app
+        shell: cmd
+        run: |
+          pyinstaller --noconfirm --clean --windowed --name WhitelistClick app.py
+          if exist keywords.csv copy keywords.csv dist\WhitelistClick\
+          if exist whitelist.csv copy whitelist.csv dist\WhitelistClick\
+          if exist blacklist.csv copy blacklist.csv dist\WhitelistClick\
+          if exist proxies.txt copy proxies.txt dist\WhitelistClick\
+          if exist update_config.json copy update_config.json dist\WhitelistClick\
+          if exist update.json copy update.json dist\WhitelistClick\
+          if exist USER_GUIDE.txt copy USER_GUIDE.txt dist\WhitelistClick\
+
+      - name: Zip portable package
+        shell: powershell
+        run: |
+          $tag = "${{ github.ref_name }}"
+          if ($tag -eq "main") { $tag = "manual" }
+          Compress-Archive -Path "dist\WhitelistClick\*" -DestinationPath "WhitelistClick_$tag.zip" -Force
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: WhitelistClick
+          path: WhitelistClick_*.zip
+
+      - name: Create GitHub Release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: WhitelistClick_*.zip
